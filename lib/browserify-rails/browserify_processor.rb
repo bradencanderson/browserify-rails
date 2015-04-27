@@ -230,6 +230,7 @@ module BrowserifyRails
     end
 
     def rails_path(*paths)
+      print Rails.root.join(*paths).to_s
       Rails.root.join(*paths).to_s
     end
   end
